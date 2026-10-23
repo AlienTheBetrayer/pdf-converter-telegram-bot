@@ -7,3 +7,4 @@ edition = "2021"
 dotenv = "0.15.0"
 teloxide = { version = "0.13", features = ["rustls"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+openssl = { version = "0.10", features = ["vendored"] }
