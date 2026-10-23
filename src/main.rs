@@ -10,7 +10,8 @@ async fn main() {
 
     teloxide::repl(bot, |bot: Bot, msg: Message| async move {
         if let Some(text) = msg.text() {
-            bot.send_message(msg.chat.id, "Hi! 👋").await?;
+            bot.send_message(msg.chat.id, format!("Message: {}", text)).await?;
+            println!("Message: {}", text);
         }
 
         respond(())
