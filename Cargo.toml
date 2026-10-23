@@ -4,7 +4,6 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-dotenv = "0.15.0"
-teloxide = { version = "0.13", features = ["rustls"] }
+teloxide = { version = "0.13", default-features = false, features = ["rustls", "ctrlc_handler"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
-openssl = { version = "0.10", features = ["vendored"] }
+dotenvy = "0.15"

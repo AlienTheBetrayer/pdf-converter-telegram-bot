@@ -2,7 +2,7 @@ use teloxide::prelude::*;
 
 #[tokio::main]
 async fn main() {
-    dotenv::dotenv().ok();
+    dotenvy::dotenv().ok();
       
     let bot = Bot::from_env();
 
