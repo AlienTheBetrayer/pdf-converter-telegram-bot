@@ -7,3 +7,10 @@ edition = "2021"
 teloxide = { version = "0.13", default-features = false, features = ["rustls", "ctrlc_handler"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 dotenvy = "0.15"
+
+[profile.release]
+opt-level = 2
+debug = 0
+strip = true
+lto = false
+codegen-units = 16
