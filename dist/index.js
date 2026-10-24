@@ -4,4 +4,4 @@ import { Bot } from "grammy";
 const bot = new Bot(process.env.TOKEN);
 bot.on("message", (ctx) => ctx.reply(ctx.message.text ?? "What?"));
 bot.start();
-//# sourceMappingURL=bot.js.map
+//# sourceMappingURL=index.js.map
